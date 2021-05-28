@@ -56,6 +56,9 @@
 		C08C9E302660B69D00D42662 /* MVPDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				C08C9E492660B7F500D42662 /* Presenter */,
+				C08C9E482660B7EC00D42662 /* Views */,
+				C08C9E452660B79C00D42662 /* Model */,
 				C08C9E312660B69D00D42662 /* AppDelegate.swift */,
 				C08C9E332660B69D00D42662 /* SceneDelegate.swift */,
 				C08C9E352660B69D00D42662 /* ViewController.swift */,
@@ -65,6 +68,27 @@
 				C08C9E3F2660B69F00D42662 /* Info.plist */,
 			);
 			path = MVPDesignPattern;
+			sourceTree = "<group>";
+		};
+		C08C9E452660B79C00D42662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C08C9E482660B7EC00D42662 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C08C9E492660B7F500D42662 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
