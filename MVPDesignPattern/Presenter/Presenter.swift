@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-//https://jsonplaceholder.typicode.com/users
 
 protocol UserPresenterDelegate: AnyObject {
     func presentUsers(users: [User])
@@ -44,6 +43,21 @@ class UserPresenter {
         self.delegate = delegate
     }
     
+    public func didTap(user: User) {
+  //      delegate?.presentAlert(title: user.name, message: "\(user.name) usa o e-mail \(user.email) & e o //usuário \(user.username)")
+        
+       let  title = user.name
+       let  message = "\(user.name) usa o e-mail \(user.email) e o //usuário \(user.username)"
+   
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ocultar", style: .cancel, handler: nil))
+        delegate?.present(alert, animated: true)
+
+    
+    
+    }
+    
+  
 }
 
 

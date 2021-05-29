@@ -62,9 +62,10 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         //Ask presenter to handle the tap
+        presenter.didTap(user: users[indexPath.row])
     }
     
-    //Presenter delegate
+    //Hey  delegate Presenter users for me
     func presentUsers(users: [User]) {
         self.users = users
         
@@ -72,10 +73,11 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
             self.tableView.reloadData()
         }
     }
-    
     func presentAlert(title: String, message: String) {
-        presenter.getUsers()
-    }
+       }
+    
+    
+   
     
 }
 
